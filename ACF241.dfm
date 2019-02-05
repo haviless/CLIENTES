@@ -1,0 +1,1049 @@
+object FDesactivacionAF: TFDesactivacionAF
+  Left = 382
+  Top = 176
+  Width = 615
+  Height = 512
+  Caption = 'Desactivaci'#243'n de Activos Fijos'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label76: TLabel
+    Left = 22
+    Top = 11
+    Width = 49
+    Height = 15
+    Caption = 'Compa'#241#237'a'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -11
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label1: TLabel
+    Left = 174
+    Top = 11
+    Width = 40
+    Height = 15
+    Caption = 'N'#250'mero'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -11
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 374
+    Top = 51
+    Width = 80
+    Height = 15
+    Caption = 'Fecha Solicitud'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -11
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 366
+    Top = 107
+    Width = 100
+    Height = 15
+    Caption = 'Fecha Autorizaci'#243'n'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -11
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label133: TLabel
+    Left = 19
+    Top = 112
+    Width = 80
+    Height = 15
+    Caption = 'Autorizado por:'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -11
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 19
+    Top = 160
+    Width = 68
+    Height = 15
+    Caption = 'Observaci'#243'n:'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -11
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 278
+    Top = 11
+    Width = 39
+    Height = 15
+    Caption = 'Motivo:'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -11
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 11
+    Top = 56
+    Width = 76
+    Height = 15
+    Caption = 'Solicitado por:'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -11
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+  end
+  object dbgTraslado: TwwDBGrid
+    Left = 6
+    Top = 224
+    Width = 579
+    Height = 209
+    DisableThemesInTitle = False
+    Selected.Strings = (
+      'TRADOCMTO'#9'12'#9'Documento de~Traslado'#9'F'
+      'TRAFECHA'#9'10'#9'Fecha de~Traslado'#9'F'
+      'LOCID'#9'8'#9'Localidad'#9'F'
+      'PISO'#9'2'#9'Piso'#9'F'
+      'AREA'#9'2'#9'Area'#9'F'
+      'AMBCOD'#9'3'#9'Ambiente'#9'F'
+      'CCOSID'#9'10'#9'C.Costo'#9'F'
+      'TRAMOTIVO'#9'14'#9'Motivo'#9'F'
+      'TRAAUTORI'#9'22'#9'Autoriza'#9'F'
+      'TRARECIBE'#9'28'#9'Recibe'#9'F'
+      'TRANCCOS'#9'10'#9'C.Costo~Anterior'#9'F'
+      'TRANLOCAL'#9'10'#9'Localidad~Anterior'#9'F'
+      'TRANPISO'#9'2'#9'Piso~Anterior'#9'F'
+      'TRANAREA'#9'2'#9'Area~Anterior'#9'F'
+      'TRANAMBCOD'#9'3'#9'Ambiente~Anterior'#9'F'
+      'TRAFREG'#9'10'#9'Fecha de~Registro'#9'F'
+      'TRAHREG'#9'10'#9'Hora de~Registro'#9'F'
+      'TRAUSER'#9'10'#9'Usuario'#9'F')
+    MemoAttributes = [mSizeable, mWordWrap, mGridShow]
+    IniAttributes.Delimiter = ';;'
+    TitleColor = 7566265
+    FixedCols = 0
+    ShowHorzScrollBar = True
+    Ctl3D = True
+    DataSource = DMAF.dsTraslado
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -9
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    KeyOptions = []
+    Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit, dgWordWrap]
+    ParentCtl3D = False
+    ParentFont = False
+    TabOrder = 0
+    TitleAlignment = taCenter
+    TitleFont.Charset = ANSI_CHARSET
+    TitleFont.Color = clNavy
+    TitleFont.Height = -11
+    TitleFont.Name = 'Comic Sans MS'
+    TitleFont.Style = []
+    TitleLines = 2
+    TitleButtons = False
+    UseTFields = False
+    object btnActTraslado: TwwIButton
+      Left = 0
+      Top = 0
+      Width = 25
+      Height = 29
+      AllowAllUp = True
+      Glyph.Data = {
+        76010000424D7601000000000000760000002800000020000000100000000100
+        04000000000000010000130B0000130B00001000000000000000000000000000
+        800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+        33333333FF33333333FF333993333333300033377F3333333777333993333333
+        300033F77FFF3333377739999993333333333777777F3333333F399999933333
+        33003777777333333377333993333333330033377F3333333377333993333333
+        3333333773333333333F333333333333330033333333F33333773333333C3333
+        330033333337FF3333773333333CC333333333FFFFF77FFF3FF33CCCCCCCCCC3
+        993337777777777F77F33CCCCCCCCCC3993337777777777377333333333CC333
+        333333333337733333FF3333333C333330003333333733333777333333333333
+        3000333333333333377733333333333333333333333333333333}
+      NumGlyphs = 2
+      Visible = False
+    end
+  end
+  object bbtnOk: TBitBtn
+    Left = 543
+    Top = 172
+    Width = 35
+    Height = 35
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -11
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = False
+    TabOrder = 1
+    Glyph.Data = {
+      DE010000424DDE01000000000000760000002800000024000000120000000100
+      0400000000006801000000000000000000001000000000000000000000000000
+      80000080000000808000800000008000800080800000C0C0C000808080000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+      3333333333333333333333330000333333333333333333333333F33333333333
+      00003333344333333333333333388F3333333333000033334224333333333333
+      338338F3333333330000333422224333333333333833338F3333333300003342
+      222224333333333383333338F3333333000034222A22224333333338F338F333
+      8F33333300003222A3A2224333333338F3838F338F33333300003A2A333A2224
+      33333338F83338F338F33333000033A33333A222433333338333338F338F3333
+      0000333333333A222433333333333338F338F33300003333333333A222433333
+      333333338F338F33000033333333333A222433333333333338F338F300003333
+      33333333A222433333333333338F338F00003333333333333A22433333333333
+      3338F38F000033333333333333A223333333333333338F830000333333333333
+      333A333333333333333338330000333333333333333333333333333333333333
+      0000}
+    NumGlyphs = 2
+  end
+  object bbtnRegresa: TBitBtn
+    Left = 162
+    Top = 442
+    Width = 32
+    Height = 31
+    Hint = 'Modificar Cabecera'
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 2
+    TabStop = False
+    Glyph.Data = {
+      9A050000424D9A05000000000000360000002800000014000000170000000100
+      18000000000064050000CE0E0000D80E00000000000000000000C0C0C0C0C0C0
+      C0C0C0C0C0C0C0C0C0C0C0C0000000FF0000FF0000FF0000FF0000FF0000FF00
+      00FF0000FF0000FF0000000000C0C0C0C0C0C0C0C0C0C0C0C000000000000000
+      0000000000000000000000FF0000000000FF0000FF0000FF0000FF0000FF0000
+      FF0000FF0000000000000000000000000000C0C0C0000000FFFFFFFFFFFFFFFF
+      FFCCCCCC00000000000000000000000000000000000000000000000000000000
+      0000000000FFFFFFFFFFFF000000C0C0C0000000FFFFFFFFFFFFFFFFFFFFFFFF
+      000000000000CCCCCCCCCCCCCCCCCCCCCCCC999999CCCCCC9999990000000000
+      00FFFFFFFFFFFF000000C0C0C0000000FFFFFFFFFFFFFFFFFF000000CCCCCCFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF666666999999CCCCCC999999000000FFFFFF
+      FFFFFF000000C0C0C0000000FFFFFFFFFFFFCCCCCC000000FFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFCCCCCC999999666666CCCCCC666666000000FFFFFFFFFFFF00
+      0000C0C0C0000000FFFFFFFFFFFF999999999999FFFFFFFFFFFFFFFFFFFFFFFF
+      CCCCCC666666000000666666CCCCCC999999000000FFFFFFFFFFFF000000C0C0
+      C0000000FFFFFFFFFFFF000000CCCCCCFFFFFFFFFFFFFFFFFFFFFFFF00000099
+      9999000000999999000000000000000000FFFFFFFFFFFF000000C0C0C0000000
+      FFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFCCCCCC0000000000000000
+      00000000666666CCCCCC000000000000FFFFFF000000C0C0C0000000FFFFFFFF
+      FFFF000000FFFFFFCCCCCCFFFFFFFFFFFF999999000000000000666666CCCCCC
+      000000CCCCCC666666000000FFFFFF000000C0C0C0000000FFFFFFFFFFFF0000
+      00FFFFFFCCCCCCFFFFFFFFFFFF666666000000999999000000CCCCCC00000066
+      6666CCCCCC000000FFFFFF000000C0C0C0000000FFFFFFFFFFFF000000FFFFFF
+      CCCCCCFFFFFFFFFFFF999999000000CCCCCC000000666666CCCCCC0000000000
+      00FFFFFFFFFFFF000000C0C0C0000000FFFFFFFFFFFF000000FFFFFFCCCCCC66
+      6666FFFFFFFFFFFF000000666666CCCCCC000000FFFFFF000000FFFFFFFFFFFF
+      FFFFFF000000C0C0C0000000FFFFFFFFFFFF000000FFFFFFCCCCCC0000009999
+      99FFFFFF000000000000FFFFFF000000000000FFFFFFFFFFFFFFFFFFFFFFFF00
+      0000C0C0C0000000FFFFFFFFFFFF000000FFFFFFCCCCCC000000000000FFFFFF
+      666666000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000C0C0
+      C0000000FFFFFFFFFFFF000000FFFFFFCCCCCC000000000000FFFFFFCCCCCC00
+      0000FFFFFF999999FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000C0C0C0000000
+      FFFFFFFFFFFF000000FFFFFFCCCCCC000000000000FFFFFFCCCCCC000000FFFF
+      FFFFFFFF000000000000000000000000000000000000C0C0C0000000FFFFFFFF
+      FFFF000000FFFFFFCCCCCC000000FFFFFF000000000000FFFFFFFFFFFFFFFFFF
+      000000FFFFFFFFFFFFFFFFFF000000C0C0C0C0C0C0000000FFFFFFFFFFFF0000
+      00FFFFFFCCCCCC000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FF
+      FFFFFFFFFF000000C0C0C0C0C0C0C0C0C0000000FFFFFFFFFFFF000000FFFFFF
+      666666000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFF0000
+      00C0C0C0C0C0C0C0C0C0C0C0C0000000000000000000000000FFFFFF99999900
+      0000000000000000000000000000000000000000000000000000C0C0C0C0C0C0
+      C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0000000999999999999000000C0C0
+      C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+      C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0000000000000C0C0C0C0C0C0C0C0C0
+      C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0}
+  end
+  object Z2bbtnAcepta: TBitBtn
+    Left = 513
+    Top = 442
+    Width = 32
+    Height = 31
+    Hint = 'Aceptar Articulos a Facturar'
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 3
+    TabStop = False
+    Glyph.Data = {
+      F2010000424DF201000000000000760000002800000024000000130000000100
+      0400000000007C01000000000000000000001000000000000000000000000000
+      80000080000000808000800000008000800080800000C0C0C000808080000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333334433333
+      3333333333388F3333333333000033334224333333333333338338F333333333
+      0000333422224333333333333833338F33333333000033422222243333333333
+      83333338F3333333000034222A22224333333338F33F33338F33333300003222
+      A2A2224333333338F383F3338F33333300003A2A222A222433333338F8333F33
+      38F33333000034A22222A22243333338833333F3338F333300004222A2222A22
+      2433338F338F333F3338F3330000222A3A2224A22243338F3838F338F3338F33
+      0000A2A333A2224A2224338F83338F338F3338F300003A33333A2224A2224338
+      333338F338F3338F000033333333A2224A2243333333338F338F338F00003333
+      33333A2224A2233333333338F338F83300003333333333A2224A333333333333
+      8F338F33000033333333333A222433333333333338F338F30000333333333333
+      A224333333333333338F38F300003333333333333A223333333333333338F8F3
+      000033333333333333A3333333333333333383330000}
+    NumGlyphs = 2
+  end
+  object Z2bbtnImprime: TBitBtn
+    Left = 128
+    Top = 442
+    Width = 32
+    Height = 31
+    Hint = 'Imprime Factura'
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 4
+    Glyph.Data = {
+      BE080000424DBE0800000000000036000000280000001B0000001A0000000100
+      18000000000088080000CE0E0000D80E00000000000000000000C0C0C0C0C0C0
+      C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+      C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+      C0C0C0C0C0C0C0C0C0C0C0000000C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+      C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+      C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C000
+      0000C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+      C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+      C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0000000C0C0C0C0C0C0C0C0C080
+      8080000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000808080C0C0
+      C0C0C0C0C0C0C0000000C0C0C0C0C0C0C0C0C000000080808080800080808080
+      8000808080808000808080808000808080808000808080808000808080808000
+      808080808000808080808080808000000000C0C0C0C0C0C0C0C0C0000000C0C0
+      C0C0C0C000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000C0C0C0C0C0C0000000C0C0C0C0C0C00000008080008080
+      0080800080800080800080800080800080800080800080800080800080800080
+      8000808000808000808000808000808000808000808000808000000000C0C0C0
+      C0C0C0000000C0C0C0C0C0C00000008080008080000000000000008080000000
+      0000000080800000000000000080800080800080800080800000000000000000
+      0000000000000000000000808000000000C0C0C0C0C0C0000000C0C0C0C0C0C0
+      0000008080008080000000000000008080000000000000008080000000000000
+      0080800080800080800080800000000000000000000000000000000000000080
+      8000000000C0C0C0C0C0C0000000C0C0C0C0C0C0000000808000808000808000
+      8080008080008080008080008080008080008080008080008080008080008080
+      00808000808000808000808000808000808000808000000000C0C0C0C0C0C000
+      0000C0C0C0C0C0C0000000808000808000808000808000808000808000808000
+      8080008080008080008080008080008080008080008080008080008080008080
+      00808000808000808000000000C0C0C0C0C0C0000000C0C0C0C0C0C0000000C0
+      C0C0C0C0C0FFFFFFFFFFFFC0C0C0FFFFFFC0C0C0FFFFFFC0C0C0FFFFFFFFFFFF
+      C0C0C0FFFFFFC0C0C0FFFFFFC0C0C0FFFFFFFFFFFFC0C0C0FFFFFFC0C0C00000
+      00C0C0C0C0C0C0000000C0C0C0C0C0C0C0C0C000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000C0C0C0C0C0C0C0C0C0000000C0C0
+      C0C0C0C0C0C0C0C0C0C0000000808000808000000000FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000808000808000
+      000000C0C0C0C0C0C0C0C0C0C0C0C0000000C0C0C0C0C0C0C0C0C0C0C0C00000
+      00000000000000000000FFFFFF00000000000080808080808000000080808000
+      0000808080000000FFFFFF000000000000000000000000C0C0C0C0C0C0C0C0C0
+      C0C0C0000000C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0000000FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00
+      0000C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0000000C0C0C0C0C0C0
+      C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0000000FFFFFF0000000000008080800000
+      00808080000000000000C0C0C0000000FFFFFF000000C0C0C0C0C0C0C0C0C0C0
+      C0C0C0C0C0C0C0C0C0C0C0000000C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+      C0C0C0000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFF000000C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C000
+      0000C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0000000FFFFFF000000
+      808080000000000000808080000000FFFFFFFFFFFFFFFFFFFFFFFF000000C0C0
+      C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0000000C0C0C0C0C0C0C0C0C0C0
+      C0C0C0C0C0C0C0C0C0C0C0000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+      C0C0C0C0C0C0C0000000C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C000
+      0000FFFFFF000000000000808080808080000000000000FFFFFF000000000000
+      000000000000C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0000000C0C0
+      C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0000000FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFF000000C0C0C0C0C0C0C0C0C0
+      C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0000000C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+      C0C0C0C0C0C0C0000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFF000000000000C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+      C0C0C0000000C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C00000000000
+      00000000000000000000000000000000000000000000000000C0C0C0C0C0C0C0
+      C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0000000C0C0C0C0C0C0
+      C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+      C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+      C0C0C0C0C0C0C0C0C0C0C0000000C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+      C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+      C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C000
+      0000}
+  end
+  object Z2bbtnAnula: TBitBtn
+    Left = 551
+    Top = 443
+    Width = 30
+    Height = 30
+    Hint = 'Anula Comisiones Ingresados'
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 5
+    Glyph.Data = {
+      96010000424D9601000000000000760000002800000015000000180000000100
+      04000000000020010000CE0E0000D80E00001000000000000000000000000000
+      8000008000000080800080000000800080008080000080808000C0C0C0000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00888888888888
+      8888888880009988888888888888888990009990000000000000009990008999
+      FFFFFFFFFFFFF999800088999FFFFFFFFFFF99988000880999FFFFFFFFF99908
+      8000880F999FFFFFFF999F088000880FF999FFFFF999FF088000880FFF999FFF
+      999FFF088000880FFFF999F999FFFF088000880FFFFF99999FFFFF088000880F
+      FFFFF999FFFFFF088000880FFFFF99999FFFFF088000880FFFF999F999FFFF08
+      8000880FFF999FFF999FFF088000880FF999FFFFF999FF088000880F999FFFFF
+      FF999F088000880999FFFFFFFFF99908800088999FFFFFFFFFFF999880008999
+      FFFFFFFFFFFFF9998000999FFFFFFFFFFFFFFF99900099000000000000000009
+      9000888888888888888888888000888888888888888888888000}
+  end
+  object Z2bbtnGraba: TBitBtn
+    Left = 470
+    Top = 443
+    Width = 35
+    Height = 30
+    Hint = 'Grabar Comisi'#243'n de Cliente'
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 6
+    Glyph.Data = {
+      8A010000424D8A01000000000000760000002800000017000000170000000100
+      04000000000014010000CE0E0000D80E00001000000000000000000000000000
+      800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+      3333333333303000077777777777770003300000078888888888880000300000
+      0780088888888800003000000780088888888800003000000780088888888800
+      0030000007888888888888000030000000000000000000000030000000000000
+      0000000000300000FFFFFFFFFFFFFF0000300000FFFFFFFFFFFFFF0000300000
+      FFFFFFFFFFFFFF0000300000FFFFFFFFFFFFFF0000300000FFFFFFFFFFFFFF00
+      00300000FFFFFFFFFFFFFF0000300000FFFFFFFFFFFFFF0000300000FFFFFFFF
+      FFFFFF0000300000FFFFFFFFFFFFFF0000300000FFFFFFFFFFFFFF0000300000
+      FFFFFFFFFFFFFF07703000009999999999999907703000009999999999999900
+      0030300099999999999999000330}
+  end
+  object pnlEstado: TPanel
+    Left = 232
+    Top = 441
+    Width = 129
+    Height = 32
+    Color = 12904163
+    TabOrder = 7
+    object lblAcepta: TLabel
+      Left = 58
+      Top = 7
+      Width = 57
+      Height = 19
+      Caption = 'INICIAL'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlue
+      Font.Height = -16
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Visible = False
+    end
+    object Label14: TLabel
+      Left = 6
+      Top = 7
+      Width = 46
+      Height = 16
+      Caption = 'Estado:'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+  end
+  object dbdtpFecInac: TwwDBDateTimePicker
+    Left = 371
+    Top = 72
+    Width = 94
+    Height = 24
+    CalendarAttributes.Font.Charset = DEFAULT_CHARSET
+    CalendarAttributes.Font.Color = clWindowText
+    CalendarAttributes.Font.Height = -11
+    CalendarAttributes.Font.Name = 'MS Sans Serif'
+    CalendarAttributes.Font.Style = []
+    DataField = 'ACFFECINAC'
+    DataSource = DMAF.dsActFij
+    Epoch = 1950
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Arial Narrow'
+    Font.Style = []
+    MinDate = 18264.000000000000000000
+    ParentFont = False
+    ShowButton = True
+    TabOrder = 8
+  end
+  object edtCia6: TEdit
+    Left = 16
+    Top = 30
+    Width = 33
+    Height = 23
+    Color = clWhite
+    Enabled = False
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 9
+  end
+  object edtCiaD6: TEdit
+    Left = 51
+    Top = 30
+    Width = 110
+    Height = 23
+    Color = 14869218
+    Enabled = False
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Comic Sans MS'
+    Font.Style = [fsItalic]
+    ParentFont = False
+    TabOrder = 10
+  end
+  object dblcMotivo: TwwDBLookupCombo
+    Left = 275
+    Top = 27
+    Width = 61
+    Height = 21
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    DropDownAlignment = taLeftJustify
+    Selected.Strings = (
+      'DESACID'#9'3'#9'Codigo'#9'F'
+      'DESACABR'#9'15'#9'Motivo'#9'F')
+    DataField = 'DESACID'
+    DataSource = DMAF.dsActFij
+    LookupTable = DMAF.cdsQry9
+    LookupField = 'DESACID'
+    Options = [loTitles]
+    MaxLength = 3
+    ParentFont = False
+    TabOrder = 11
+    AutoDropDown = False
+    ShowButton = True
+    PreciseEditRegion = False
+    AllowClearKey = False
+  end
+  object edtMotivo: TEdit
+    Left = 338
+    Top = 26
+    Width = 180
+    Height = 24
+    Enabled = False
+    TabOrder = 12
+  end
+  object wwDBDateTimePicker1: TwwDBDateTimePicker
+    Left = 371
+    Top = 128
+    Width = 94
+    Height = 24
+    CalendarAttributes.Font.Charset = DEFAULT_CHARSET
+    CalendarAttributes.Font.Color = clWindowText
+    CalendarAttributes.Font.Height = -11
+    CalendarAttributes.Font.Name = 'MS Sans Serif'
+    CalendarAttributes.Font.Style = []
+    DataField = 'ACFFECINAC'
+    DataSource = DMAF.dsActFij
+    Epoch = 1950
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Arial Narrow'
+    Font.Style = []
+    MinDate = 18264.000000000000000000
+    ParentFont = False
+    ShowButton = True
+    TabOrder = 13
+  end
+  object edtResponsable6: TEdit
+    Left = 15
+    Top = 131
+    Width = 70
+    Height = 23
+    Color = clWhite
+    Enabled = False
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -11
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 14
+  end
+  object edtResponsableD6: TEdit
+    Left = 86
+    Top = 130
+    Width = 226
+    Height = 23
+    Color = 14869218
+    Enabled = False
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -11
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 15
+  end
+  object dbeDesacmo: TwwDBEdit
+    Left = 19
+    Top = 179
+    Width = 438
+    Height = 30
+    DataField = 'ACFDESACMO'
+    DataSource = DMAF.dsActFij
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 16
+    UnboundDataType = wwDefault
+    WantReturns = False
+    WordWrap = False
+  end
+  object Edit1: TEdit
+    Left = 15
+    Top = 75
+    Width = 70
+    Height = 23
+    Color = clWhite
+    Enabled = False
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -11
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 17
+  end
+  object Edit2: TEdit
+    Left = 86
+    Top = 74
+    Width = 226
+    Height = 23
+    Color = 14869218
+    Enabled = False
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -11
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 18
+  end
+  object Edit3: TEdit
+    Left = 171
+    Top = 30
+    Width = 86
+    Height = 23
+    Color = 14869218
+    Enabled = False
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Comic Sans MS'
+    Font.Style = [fsItalic]
+    ParentFont = False
+    TabOrder = 19
+  end
+  object Panel2: TPanel
+    Left = 122
+    Top = 141
+    Width = 375
+    Height = 244
+    BevelInner = bvRaised
+    BorderStyle = bsSingle
+    Color = clMenuBar
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 20
+    object Label60: TLabel
+      Left = 9
+      Top = 75
+      Width = 49
+      Height = 17
+      Caption = 'Localidad'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clNavy
+      Font.Height = -11
+      Font.Name = 'Comic Sans MS'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label91: TLabel
+      Left = 8
+      Top = 11
+      Width = 51
+      Height = 15
+      Caption = 'Cod.Barra'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clNavy
+      Font.Height = -11
+      Font.Name = 'Comic Sans MS'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label96: TLabel
+      Left = 176
+      Top = 75
+      Width = 22
+      Height = 17
+      Caption = 'Piso'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clNavy
+      Font.Height = -11
+      Font.Name = 'Comic Sans MS'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label131: TLabel
+      Left = 8
+      Top = 115
+      Width = 25
+      Height = 17
+      Caption = 'Area'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clNavy
+      Font.Height = -11
+      Font.Name = 'Comic Sans MS'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label132: TLabel
+      Left = 176
+      Top = 115
+      Width = 48
+      Height = 17
+      Caption = 'Ambiente'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clNavy
+      Font.Height = -11
+      Font.Name = 'Comic Sans MS'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label8: TLabel
+      Left = 11
+      Top = 156
+      Width = 62
+      Height = 17
+      Caption = 'Responsable'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clNavy
+      Font.Height = -11
+      Font.Name = 'Comic Sans MS'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label134: TLabel
+      Left = 8
+      Top = 34
+      Width = 26
+      Height = 15
+      Caption = 'Tipo '
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clNavy
+      Font.Height = -11
+      Font.Name = 'Comic Sans MS'
+      Font.Style = []
+      ParentFont = False
+    end
+    object edtLoc6: TEdit
+      Left = 8
+      Top = 90
+      Width = 33
+      Height = 25
+      Color = 14869218
+      Enabled = False
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Comic Sans MS'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 0
+    end
+    object edtLocD6: TEdit
+      Left = 43
+      Top = 90
+      Width = 126
+      Height = 25
+      Color = 14869218
+      Enabled = False
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Comic Sans MS'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 1
+    end
+    object edtAct6: TEdit
+      Left = 67
+      Top = 6
+      Width = 73
+      Height = 23
+      Color = clWhite
+      Enabled = False
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Comic Sans MS'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 2
+    end
+    object edtTip6: TEdit
+      Left = 9
+      Top = 50
+      Width = 57
+      Height = 23
+      Color = 14869218
+      Enabled = False
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Comic Sans MS'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 3
+    end
+    object edtTipD6: TEdit
+      Left = 68
+      Top = 50
+      Width = 175
+      Height = 23
+      Color = 14869218
+      Enabled = False
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Comic Sans MS'
+      Font.Style = [fsItalic]
+      ParentFont = False
+      TabOrder = 4
+    end
+    object edtActD6: TEdit
+      Left = 142
+      Top = 6
+      Width = 203
+      Height = 23
+      Color = 14869218
+      Enabled = False
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Comic Sans MS'
+      Font.Style = [fsItalic]
+      ParentFont = False
+      TabOrder = 5
+    end
+    object edtPiso6: TEdit
+      Left = 176
+      Top = 90
+      Width = 33
+      Height = 25
+      Color = 14869218
+      Enabled = False
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Comic Sans MS'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 6
+    end
+    object edtArea6: TEdit
+      Left = 8
+      Top = 131
+      Width = 33
+      Height = 25
+      Color = 14869218
+      Enabled = False
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Comic Sans MS'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 7
+    end
+    object edtAmbiente6: TEdit
+      Left = 176
+      Top = 131
+      Width = 33
+      Height = 25
+      Color = 14869218
+      Enabled = False
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Comic Sans MS'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 8
+    end
+    object edtPisoD6: TEdit
+      Left = 214
+      Top = 90
+      Width = 139
+      Height = 25
+      Color = 14869218
+      Enabled = False
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Comic Sans MS'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 9
+    end
+    object edtAreaD6: TEdit
+      Left = 43
+      Top = 131
+      Width = 126
+      Height = 25
+      Color = 14869218
+      Enabled = False
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Comic Sans MS'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 10
+    end
+    object edtAmbienteD6: TEdit
+      Left = 211
+      Top = 131
+      Width = 142
+      Height = 25
+      Color = 14869218
+      Enabled = False
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Comic Sans MS'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 11
+    end
+    object Edit8: TEdit
+      Left = 7
+      Top = 172
+      Width = 70
+      Height = 25
+      Color = 14869218
+      Enabled = False
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Comic Sans MS'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 12
+    end
+    object Edit9: TEdit
+      Left = 86
+      Top = 171
+      Width = 267
+      Height = 25
+      Color = 14869218
+      Enabled = False
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Comic Sans MS'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 13
+    end
+    object bbtnOk3: TBitBtn
+      Left = 274
+      Top = 200
+      Width = 33
+      Height = 34
+      TabOrder = 14
+      Glyph.Data = {
+        DE010000424DDE01000000000000760000002800000024000000120000000100
+        0400000000006801000000000000000000001000000000000000000000000000
+        80000080000000808000800000008000800080800000C0C0C000808080000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+        3333333333333333333333330000333333333333333333333333F33333333333
+        00003333344333333333333333388F3333333333000033334224333333333333
+        338338F3333333330000333422224333333333333833338F3333333300003342
+        222224333333333383333338F3333333000034222A22224333333338F338F333
+        8F33333300003222A3A2224333333338F3838F338F33333300003A2A333A2224
+        33333338F83338F338F33333000033A33333A222433333338333338F338F3333
+        0000333333333A222433333333333338F338F33300003333333333A222433333
+        333333338F338F33000033333333333A222433333333333338F338F300003333
+        33333333A222433333333333338F338F00003333333333333A22433333333333
+        3338F38F000033333333333333A223333333333333338F830000333333333333
+        333A333333333333333338330000333333333333333333333333333333333333
+        0000}
+      NumGlyphs = 2
+    end
+    object bbtnCancela3: TBitBtn
+      Left = 322
+      Top = 201
+      Width = 33
+      Height = 33
+      TabOrder = 15
+      Glyph.Data = {
+        DE010000424DDE01000000000000760000002800000024000000120000000100
+        0400000000006801000000000000000000001000000000000000000000000000
+        80000080000000808000800000008000800080800000C0C0C000808080000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+        333333333333333333333333000033338833333333333333333F333333333333
+        0000333911833333983333333388F333333F3333000033391118333911833333
+        38F38F333F88F33300003339111183911118333338F338F3F8338F3300003333
+        911118111118333338F3338F833338F3000033333911111111833333338F3338
+        3333F8330000333333911111183333333338F333333F83330000333333311111
+        8333333333338F3333383333000033333339111183333333333338F333833333
+        00003333339111118333333333333833338F3333000033333911181118333333
+        33338333338F333300003333911183911183333333383338F338F33300003333
+        9118333911183333338F33838F338F33000033333913333391113333338FF833
+        38F338F300003333333333333919333333388333338FFF830000333333333333
+        3333333333333333333888330000333333333333333333333333333333333333
+        0000}
+      NumGlyphs = 2
+    end
+  end
+end

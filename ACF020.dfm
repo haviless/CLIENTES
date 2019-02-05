@@ -1,0 +1,249 @@
+object FCtrlAcceso: TFCtrlAcceso
+  Left = 497
+  Top = 227
+  BorderStyle = bsDialog
+  Caption = 'Registro de Usuario'
+  ClientHeight = 212
+  ClientWidth = 315
+  Color = 10207162
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  KeyPreview = True
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnKeyPress = FormKeyPress
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lblmodulo: TLabel
+    Left = 35
+    Top = 0
+    Width = 10
+    Height = 35
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -24
+    Font.Name = 'Comic Sans MS'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 256
+    Top = 184
+    Width = 48
+    Height = 13
+    Caption = 'DeMaSoft'
+  end
+  object Label1: TLabel
+    Left = 11
+    Top = 4
+    Width = 134
+    Height = 20
+    Alignment = taCenter
+    Caption = 'ACTIVOS FIJOS'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object BLogin_Entrada: TfcShapeBtn
+    Left = 39
+    Top = 132
+    Width = 114
+    Height = 45
+    Cursor = crHandPoint
+    Hint = 'Reporte'
+    Caption = 'Ingresar'
+    Color = 10207162
+    DitherColor = clAqua
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clMaroon
+    Font.Height = -4
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    Glyph.Data = {
+      76010000424D7601000000000000760000002800000020000000100000000100
+      04000000000000010000120B0000120B00001000000000000000000000000000
+      800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF0033BBBBBBBBBB
+      BB33337777777777777F33BB00BBBBBBBB33337F77333333F37F33BB0BBBBBB0
+      BB33337F73F33337FF7F33BBB0BBBB000B33337F37FF3377737F33BBB00BB00B
+      BB33337F377F3773337F33BBBB0B00BBBB33337F337F7733337F33BBBB000BBB
+      BB33337F33777F33337F33EEEE000EEEEE33337F3F777FFF337F33EE0E80000E
+      EE33337F73F77773337F33EEE0800EEEEE33337F37377F33337F33EEEE000EEE
+      EE33337F33777F33337F33EEEEE00EEEEE33337F33377FF3337F33EEEEEE00EE
+      EE33337F333377F3337F33EEEEEE00EEEE33337F33337733337F33EEEEEEEEEE
+      EE33337FFFFFFFFFFF7F33EEEEEEEEEEEE333377777777777773}
+    Layout = blGlyphRight
+    NumGlyphs = 2
+    Options = [boFocusable]
+    ParentClipping = True
+    ParentFont = False
+    ParentShowHint = False
+    RoundRectBias = 25
+    ShadeColors.BtnFocus = clNavy
+    ShadeStyle = fbsHighlight
+    Shape = bsRoundRect
+    ShowHint = True
+    TabOrder = 0
+    TabStop = True
+    TextOptions.Alignment = taCenter
+    TextOptions.VAlignment = vaVCenter
+    OnClick = BLogin_EntradaClick
+  end
+  object BLogin_Salir: TfcShapeBtn
+    Left = 183
+    Top = 132
+    Width = 114
+    Height = 45
+    Cursor = crHandPoint
+    Hint = 'Reporte'
+    Caption = 'Salir'
+    Color = 10207162
+    DitherColor = clWhite
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clMaroon
+    Font.Height = -4
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    Glyph.Data = {
+      76010000424D7601000000000000760000002800000020000000100000000100
+      04000000000000010000120B0000120B00001000000000000000000000000000
+      800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00330000000000
+      03333377777777777F333301111111110333337F333333337F33330111111111
+      0333337F333333337F333301111111110333337F333333337F33330111111111
+      0333337F333333337F333301111111110333337F333333337F33330111111111
+      0333337F3333333F7F333301111111B10333337F333333737F33330111111111
+      0333337F333333337F333301111111110333337F33FFFFF37F3333011EEEEE11
+      0333337F377777F37F3333011EEEEE110333337F37FFF7F37F3333011EEEEE11
+      0333337F377777337F333301111111110333337F333333337F33330111111111
+      0333337FFFFFFFFF7F3333000000000003333377777777777333}
+    Layout = blGlyphRight
+    NumGlyphs = 2
+    Options = [boFocusable]
+    ParentClipping = True
+    ParentFont = False
+    ParentShowHint = False
+    RoundRectBias = 25
+    ShadeColors.BtnFocus = clNavy
+    ShadeStyle = fbsHighlight
+    Shape = bsRoundRect
+    ShowHint = True
+    TabOrder = 1
+    TabStop = True
+    TextOptions.Alignment = taCenter
+    TextOptions.VAlignment = vaVCenter
+    OnClick = BLogin_SalirClick
+  end
+  object gbControlAcceso: TGroupBox
+    Left = 8
+    Top = 27
+    Width = 297
+    Height = 151
+    Caption = 'Control de Acceso'
+    TabOrder = 2
+    object lblUsuario: TLabel
+      Left = 30
+      Top = 32
+      Width = 36
+      Height = 13
+      Caption = 'Usuario'
+    end
+    object lblContrasena: TLabel
+      Left = 30
+      Top = 71
+      Width = 54
+      Height = 13
+      Caption = 'Contrase'#241'a'
+    end
+    object dbePassword: TwwDBEdit
+      Left = 112
+      Top = 69
+      Width = 121
+      Height = 19
+      BorderStyle = bsNone
+      Frame.Enabled = True
+      Frame.NonFocusBorders = [efRightBorder, efBottomBorder]
+      PasswordChar = '*'
+      TabOrder = 1
+      UnboundDataType = wwDefault
+      WantReturns = False
+      WordWrap = False
+    end
+    object dbeUsuario: TwwDBEdit
+      Left = 112
+      Top = 29
+      Width = 121
+      Height = 19
+      BorderStyle = bsNone
+      CharCase = ecUpperCase
+      Frame.Enabled = True
+      Frame.NonFocusBorders = [efRightBorder, efBottomBorder]
+      TabOrder = 0
+      UnboundDataType = wwDefault
+      WantReturns = False
+      WordWrap = False
+      OnKeyPress = FormKeyPress
+    end
+    object bbtnOkIngreso: TBitBtn
+      Left = 128
+      Top = 112
+      Width = 75
+      Height = 25
+      Caption = 'Ok'
+      TabOrder = 2
+      OnClick = BLogin_EntradaClick
+      Glyph.Data = {
+        DE010000424DDE01000000000000760000002800000024000000120000000100
+        0400000000006801000000000000000000001000000000000000000000000000
+        80000080000000808000800000008000800080800000C0C0C000808080000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+        3333333333333333333333330000333333333333333333333333F33333333333
+        00003333344333333333333333388F3333333333000033334224333333333333
+        338338F3333333330000333422224333333333333833338F3333333300003342
+        222224333333333383333338F3333333000034222A22224333333338F338F333
+        8F33333300003222A3A2224333333338F3838F338F33333300003A2A333A2224
+        33333338F83338F338F33333000033A33333A222433333338333338F338F3333
+        0000333333333A222433333333333338F338F33300003333333333A222433333
+        333333338F338F33000033333333333A222433333333333338F338F300003333
+        33333333A222433333333333338F338F00003333333333333A22433333333333
+        3338F38F000033333333333333A223333333333333338F830000333333333333
+        333A333333333333333338330000333333333333333333333333333333333333
+        0000}
+      NumGlyphs = 2
+    end
+    object bbtnCancelaIngreso: TBitBtn
+      Left = 208
+      Top = 112
+      Width = 75
+      Height = 25
+      Caption = 'Cancela'
+      ModalResult = 2
+      TabOrder = 3
+      Glyph.Data = {
+        DE010000424DDE01000000000000760000002800000024000000120000000100
+        0400000000006801000000000000000000001000000000000000000000000000
+        80000080000000808000800000008000800080800000C0C0C000808080000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+        333333333333333333333333000033338833333333333333333F333333333333
+        0000333911833333983333333388F333333F3333000033391118333911833333
+        38F38F333F88F33300003339111183911118333338F338F3F8338F3300003333
+        911118111118333338F3338F833338F3000033333911111111833333338F3338
+        3333F8330000333333911111183333333338F333333F83330000333333311111
+        8333333333338F3333383333000033333339111183333333333338F333833333
+        00003333339111118333333333333833338F3333000033333911181118333333
+        33338333338F333300003333911183911183333333383338F338F33300003333
+        9118333911183333338F33838F338F33000033333913333391113333338FF833
+        38F338F300003333333333333919333333388333338FFF830000333333333333
+        3333333333333333333888330000333333333333333333333333333333333333
+        0000}
+      NumGlyphs = 2
+    end
+  end
+end
